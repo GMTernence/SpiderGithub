@@ -7,7 +7,7 @@ PyMySQL >= 0.8.0
 BeautifulSoup >= 4.7.0  
 
 ## 2.数据库设计
-![image](https://github.com/GMTernence/image_repo/blob/master/Github(1).png)  
+![image](https://github.com/GMTernence/SpiderGithub/blob/master/Github.png)  
 
 
 ## 3.相关参数说明
