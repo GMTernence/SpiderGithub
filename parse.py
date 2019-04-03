@@ -151,7 +151,7 @@ def get_single(repo_url, repo_id):
         next_page = soup.find(name='a', class_='next_page')
         repo_lists = soup.find_all(name='div', id=re.compile(r'^issue_[0-9]+$'))
         for repo in repo_lists:
-            detailed_url = BASE_URL + repo.find(name='a', id=re.compile(r'^issue-id-[0-9]+$')).get('href')
+            detailed_url = BASE_URL + repo.find(name='a', id=re.compile('^issue_[0-9]+_link$')).get('href')
             get_detailed(detailed_url, repo_id)
         if next_page:
             next_page_url = BASE_URL + next_page.get('href')
